@@ -105,3 +105,15 @@ kubectl logs <podname>
     ![LOGS](./images/logsGUI.png)
 
 ---
+
+### For maintaing sync 
+- Now whenever a change occurs we would usually trigger/activate a pipeline
+- That would rebuild the image and maintain sync with AKS
+- But in this case without an RBAC a pipeline cannot be maintainer
+- But for kubectl we can use the below command which pulls the latest image it can find from the ACR
+
+```bash
+kubectl rollout restart deployment eventhubdatamover
+```
+
+---

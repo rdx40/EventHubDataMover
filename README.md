@@ -17,7 +17,7 @@ An application to migrate data from one eventhub to another in real time and dep
 ### Send the app to ACR(without making use of docker)
 
 - After selecting publish create a new profile in order to **push to ACR**
-- Select the Second option, i.e, **Docker Container Registry**
+- Select the First option, i.e, **Azure**
   ![Container Reg](./images/dockercontainerreg.png)
 - And then proceed to choose **Azure Container Registry**.
   ![ACR](./images/ACR.png)
